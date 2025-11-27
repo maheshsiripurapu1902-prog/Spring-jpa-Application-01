@@ -11,4 +11,10 @@ public interface StudentService {
 	public void getPrintSingleRecords(long id);
 	
 	public void getSaveMultipleRecords(List<Student>students);
+	
+	public void getDeletedSingleRecord(long id);
+	
+	public List<Student>getAllRecords();
+	
+	public void getdeletedAllRecords();
 }

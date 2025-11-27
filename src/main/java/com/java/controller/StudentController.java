@@ -40,4 +40,25 @@ public class StudentController {
 		service.getSaveMultipleRecords(stduents);
 	}
 	
+	
+	public void getRemoveStudentSingleRecords(long id) {
+		
+		service.getDeletedSingleRecord(id);
+	}
+	
+	
+	public List<Student>findAllRecords(){
+		
+	List<Student>list	=service.getAllRecords();
+	
+	
+	return list;
+	}
+	
+	
+	public void getDeletedAllStudentRecords() {
+		
+		service.getdeletedAllRecords();
+	}
+	
 }

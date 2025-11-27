@@ -48,5 +48,29 @@ public class StudentServiceImp implements StudentService {
 			System.out.println(student);
 		});
 	}
+
+	@Override
+	public void getDeletedSingleRecord(long id) {
+
+		
+		repo.deleteById(id);
+	}
+
+	@Override
+	public List<Student> getAllRecords() {
+
+		
+		List<Student>list=repo.findAll();
+		return list;
+	}
+
+	@Override
+	public void getdeletedAllRecords() {
+
+		
+		List<Student>all=repo.findAll();
+		
+		repo.deleteAll(all);
+	}
 	
 }
